@@ -2,4 +2,5 @@
 
 Victoria Rodgers
 041040826
-Capstone Project Pokedex
+Capstone Project Part 1
+Pokedex
