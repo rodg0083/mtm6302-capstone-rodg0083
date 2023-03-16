@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/CSS.css" rel="stylesheet">
+  <title>Pokedex</title>
+  <link rel="icon" type="image/x-icon" href="images/pokeball.png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="nav-wrapper">
+    <nav id="nav">
+      <div class="nav left">
+        <span class="gradient skew"><h1 class="logo un-skew"><a href="index.html"><img alt="Pokeball Logo" src="images/pokeball.png" width="50"> <b>Pokedex</b> </a></h1></span>
+      </div>
+      <div class="nav right" id="topnav">
+        <a href="index.html" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Pokemon</span></span></a>
+        <a href="catch.html" class="nav-link "><span class="nav-link-span"><span class="u-nav">Start Your Adventure</span></span></a>
+      </div>
+
+
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="btn-nav"><img alt="Pokeball Logo" src="images/pokeball.png" width="50"></div>
+  
+  
+    <ul class="mobile-menu">
+    <li><a href="#home" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Start</span></span></a></li>
+    <li><a href="index.html" class="nav-link"><span class="nav-link-span"><span class="u-nav">Pokemon</span></span></a></li>
+    <li><a href="#work" class="nav-link"><span class="nav-link-span"><span class="u-nav">Catch them all!</span></span></a></li>
+  </ul>
+  </div>
+    </nav>
+
+  </header>
+  <main>
+
+    <h2 id="title">Pokemon Info Card</h2>
+    
+    <div class="card mb-3" >
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/pokeball_2.png" class="img-fluid rounded-start" alt="..." style="padding: 0 40px;">
+          <h5 class="card-title">Pokemon Name</h5>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Description</h5>
+            <p class="card-text">Lorem Ipsum, Lorem, Ipsum, Lorem Ipsum, Lorem, Ipsum, Lorem Ipsum, Lorem, Ipsum, Lorem Ipsum, Lorem, Ipsum, Lorem Ipsum, Lorem, Ipsum, Lorem Ipsum, Lorem, Ipsum, Lorem Ipsum, Lorem, Ipsum, Lorem Ipsum, Lorem, Ipsum, Lorem Ipsum, Lorem, Ipsum,Lorem Ipsum, Lorem, Ipsum.</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Statistics</h5>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <h2 id="title">Evolutions</h2>
+
+    <div class="evolution">
+
+            <div class="card" style="display:inline-block; width: 30%;">
+              <div class="img-container">
+                <a href="index.php" class="card-img-top"></a>
+              </div>
+              <div class="card-body">
+                <img src="images/pokeball_2.png" class="img-fluid rounded-start" alt="..." style="padding: 0 40px;">
+                <h5 class="card-title">Pokemon Name</h5>
+              </div>
+            </div>
+
+
+              <div class="card" style="display:inline-block; width: 30%;">
+              <div class="img-container">
+              <a href="index.php" class="card-img-top"></a>
+              </div>
+
+              <div class="card-body">
+                <img src="images/pokeball_2.png" class="img-fluid rounded-start" alt="..." style="padding: 0 40px;">
+                <h5 class="card-title">Pokemon Name</h5>
+
+              </div>
+              </div>
+
+              <div class="card" style="display:inline-block; width: 30%;">
+                <div class="img-container">
+                <a href="index.php" class="card-img-top"></a>
+                </div>
+  
+                <div class="card-body">
+                  <img src="images/pokeball_2.png" class="img-fluid rounded-start" alt="..." style="padding: 0 40px;">
+                  <h5 class="card-title">Pokemon Name</h5>
+  
+                </div>
+                </div>
+              </div>
+
+
+
+
+  </main>
+
+
+  <footer>
+    <div class="footer_container" itemscope itemtype="https://schema.org/ImageObject">
+      <a itemprop="copyrightNotice" class="copyright" href="index.html"aria-label="Click to take you to the home page"><img alt="Artisly Logo" src="images/artisly-logo.png" width="150"></a> 
+       <p><strong><small>&copy; Victoria Rodgers 2022. All Rights Reserved</small>.</strong></p>
+        <p><small><sup>*</sup>Note: This webpage was created within the bounds of the course MTM6201_020 at Algonquin College.</small></p>
+     </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

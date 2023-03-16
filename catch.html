@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/CSS.css" rel="stylesheet">
+  <title>Pokedex</title>
+  <link rel="icon" type="image/x-icon" href="images/pokeball.png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="nav-wrapper">
+    <nav id="nav">
+      <div class="nav left">
+        <span class="gradient skew"><h1 class="logo un-skew"><a href="index.html"><img alt="Pokeball Logo" src="images/pokeball.png" width="50"> <b>Pokedex</b> </a></h1></span>
+      </div>
+      <div class="nav right" id="topnav">
+        <a href="index.html" class="nav-link"><span class="nav-link-span"><span class="u-nav">Pokemon</span></span></a>
+        <a href="catch.html" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Start Your Adventure</span></span></a>
+      </div>
+
+
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="btn-nav"><img alt="Pokeball Logo" src="images/pokeball.png" width="50"></div>
+  
+  
+    <ul class="mobile-menu">
+    <li><a href="#home" class="nav-link active"><span class="nav-link-span"><span class="u-nav">Start</span></span></a></li>
+    <li><a href="index.html" class="nav-link"><span class="nav-link-span"><span class="u-nav">Pokemon</span></span></a></li>
+    <li><a href="#work" class="nav-link"><span class="nav-link-span"><span class="u-nav">Catch them all!</span></span></a></li>
+  </ul>
+  </div>
+    </nav>
+
+  </header>
+  <main>
+    <!-- Pokemon Capture System -->
+
+    <div class="game">
+      <div class="opponent">
+        <div class="stats">
+          <div class="top">
+          </div>
+        </div>
+        <img class="pokemon" src="images/pokeball_2.png" alt ="A sprite of a pokemon" />
+      </div>
+
+          <div class="box">
+      <div id = "message" class="message">
+        A wild pokemon appeared!
+      </div>
+      <div class = "continue">
+        <button onclick = "compPokemon()">Throw</button>
+      </div>
+
+    </div>
+    </div>
+
+
+    <!--
+    <div class="arena">
+
+      <img src="images/pokeball_2.png" id="wild">
+      <svg class="shadow" height="150" width="500">
+        <ellipse cx="240" cy="100" rx="220" ry="30" style="fill:black;" />
+      </svg>
+      
+    <div class="card text-center" id="gb-box" style="width: 40rem; border: 10px solid #222;">
+      <div class="card-body text-dark">
+        <h5 class="card-title">A wild pokemon appeared!</h5>
+        <p class="card-text">Quick catch it in your pokeball! Click THROW to throw your pokeball at the pokemon.</p>
+        <a href="#" type="button" class="btn btn-dark">Throw</a>
+      </div>
+    </div>
+
+  -->
+  </div>
+  </main>
+
+
+  <footer>
+    <div class="footer_container" itemscope itemtype="https://schema.org/ImageObject">
+      <a itemprop="copyrightNotice" class="copyright" href="index.html"aria-label="Click to take you to the home page"><img alt="Artisly Logo" src="images/artisly-logo.png" width="150"></a> 
+       <p><strong><small>&copy; Victoria Rodgers 2022. All Rights Reserved</small>.</strong></p>
+        <p><small><sup>*</sup>Note: This webpage was created within the bounds of the course MTM6201_020 at Algonquin College.</small></p>
+     </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -2,11 +2,17 @@
 
 Victoria Rodgers
 041040826
+Capstone Project (part 1)
+Capstone Project (part 2)
+Capstone Project (part 3)
 
-Capstone Project Part 1
-Pokedex
 
-Capstone Project Part 2
+Bootstrap 5 is used along with HTML, CSS and Javascript. 
 
-My reasoning for the website design: 
-For the Capstone project I decided to create a Pokédex website. As per the Pokémon brand I tried to stick with the same recognisable colours, mainly red, white and black, but I also added a few other complementary colours that should give the website a sleek design. In line with that thinking, I also tried to keep the motif of a Pokéball (an iconic symbol for the franchise) throughout the design of the website from the home page to the gallery and description. Meanwhile in homage to the original Pokémon games I tried designing the catching Pokémon interface around the original Pokémon games. As such the fonts I chose also fit the theme using Titles and Headers with the Pokémon Solid front, while using the Pokémon GB for the catching interface (once again referring to the original games) and Nunito or Arial for the body text (as sans-sans fonts are more legible on a screen).
+I first started with the nav styling and setting up the nav links. I then styled the index picture gallery, with bootstrap code. I then used bootstrap cards to create the info card for the selected Pokémon. Afterwards I created the background for the Pokémon catch feature. 
+
+Challenges faced: 
+It was interesting trying to think about how to put together the website to think about how it is going to work when creating the JavaScript. 
+While creating the image gallery, I realised as I was there was no need for the initial welcome page as it would be redundant. I decided to turn it into a pop-up modal that would explain to the user what the website would be used for. This idea for the feature came last minute so it will be added in the next iteration.  
+One particular challenge I faced was/is creating the responsiveness for the catching interface and create animations using shapes, especially when using canvas or svg shapes. I will be adding the animation for the throwing pokeball in the next iteration. 
+
