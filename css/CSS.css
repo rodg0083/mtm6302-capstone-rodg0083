@@ -1,0 +1,465 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*___________________________________________________________________________________________
+                                    Start of Website
+_____________________________________________________________________________________________*/
+@font-face {
+    font-family: GBPokemon;
+    src: url(font/PokemonGb-RAeo.TTF);
+}
+  /*-------------Button Reset-------------*/
+  button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+  }
+  button:focus, input:focus {
+    outline: 0;
+  }
+
+    /*-------------Layout-------------*/
+  html {
+    scroll-behavior: smooth;
+    background-color: #f0f0f0;
+    font-family: "GBPokemon", Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+  }
+  #poke-list {
+    height: 100%;
+
+  }
+  /*-------------Helpers-------------*/
+  .skew {
+    transform: skew(-20deg);
+  }
+  .un-skew {
+    transform: skew(20deg);
+  }
+  
+  /*___________________________________________________________________________________________
+                                    Mobile First
+  _____________________________________________________________________________________________*/
+  /*-------------Nav-------------*/
+  #nav-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  #nav {
+    background-color: #BFE5EC;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 4em;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  #nav.nav-visible {
+    height: 100%;
+    overflow: auto;
+  }
+  .nav {
+    display: flex;
+    height: 4em;
+    line-height: 3em;
+    flex-grow: 1;
+  }
+  .nav-link, .logo {
+    padding: 0 1em;
+  }
+  span.gradient {
+    background: #D32222;
+    background: -webkit-linear-gradient(45deg, #D32222, #ff5858);
+    background: linear-gradient(45deg, #D32222, #ff5858);
+    padding: 0 1em;
+    position: relative;
+    right: 1em;
+    margin-right: auto;
+  }
+  span.gradient:hover {
+    animation-name: logo-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
+  }
+  h1.logo {
+    font-weight: 300;
+    font-size: 2em;
+    color: #f0f0f0;
+    line-height: 1.9;
+  }
+  h1.logo a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: #f0f0f0;
+  }
+  .nav-link {
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 0.5px solid #f0f0f0;
+  }
+  a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #D32222;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .btn-nav {
+    color: #D32222;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: block;
+  }
+
+ul{
+    display: none;
+}
+
+          figure {
+            margin: 15px 0;
+          }
+          
+          figcaption {
+            text-align: center;
+          }
+          
+          .grayscale {
+            filter: grayscale(0);
+          }
+          
+          .grayscale:hover {
+            filter: grayscale(50%)
+          }
+
+          header {
+            color: #f0f0f0;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+        
+        #more{
+          padding: 40px 0;
+        }
+        
+        #title{
+          padding-top: 20px;
+          font-size: 3rem;
+          font-weight: bold;
+          text-align: center;
+        }
+
+    h5{
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .card {
+        padding: 40px;
+    }
+    .evolution{
+        display: flex;
+        justify-content: center;
+    }   
+    .container-fluid{
+     padding: 40px;
+        }
+    
+.arena{
+    border: 15px solid #222;
+    background-color: #777;
+    margin: 40px;
+    position: relative;
+
+}
+
+.shadow{
+    position: absolute;
+bottom: 30%;
+right: 10%;
+    z-index: 1;
+}
+
+#wild{
+position: inherit;
+bottom: 10%;
+left: 50%;
+}
+
+/* Start new */
+
+  .game {
+    background-color: #cecece;
+    border: 5px solid black;
+    border-radius: 8px 8px 0 0;
+    height: 480px;
+    width: auto;
+  }
+  
+  .opponent {
+    position: relative;
+    height: 300px;
+  }
+  
+  
+  .opponent .pokemon {
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    width: 200px;
+  }
+  
+  .box {
+    padding: 8px;
+    background: #333;
+    border: 3px solid black;
+    border-top: none;
+    color: #fff;
+    height: 170px;
+    width: auto;
+    margin: 0 30% 0 0;
+  }
+  
+  .box .message {
+    font-size: 24px;
+  }
+  .box .continue {
+    position: relative;
+    margin-top: 30px;
+    float: left;
+    width: 25%;
+    height: 100%;
+  }
+  .box .continue  button {
+    position: relative;
+    float: left;
+    background: #666;
+    border: 3px solid #888;
+    border-radius: 4px;
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 14px;
+    margin: 4px;
+    padding: 16px;
+    outline: none !important;
+  }
+  .box .continue button:hover {
+    background: #777;
+    border-color: #999;
+  }
+  
+  .box .continue button:active {
+    background: #555;
+    border-color: #666;
+  }
+  
+  .box .actions {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .box .actions button {
+
+    background: #666;
+    border: 3px solid #888;
+    border-radius: 4px;
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 14px;
+    margin: 4px;
+    padding: 16px;
+    width: calc(50% - 8px);
+    height: calc(50% - 8px);
+    outline: none !important;
+  }
+  
+  .box .actions button:hover {
+    background: #777;
+    border-color: #999;
+  }
+  
+  .box .actions button:active {
+    background: #555;
+    border-color: #666;
+  }
+  
+
+  /* ----------------------------------- */
+
+
+
+
+.column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+          }
+        
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+          }
+        }
+  /*___________________________________________________________________________________________
+                                      Desktop
+  _____________________________________________________________________________________________*/
+  @media screen and (min-width:769px) {
+    #nav-wrapper {
+      overflow: hidden;
+    }
+    #nav {
+      overflow: hidden;
+      flex-direction: row;
+    }
+    .nav-link {
+      border-top: none;
+    }
+    .right {
+      overflow: hidden;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+      left: 1.5em;
+      height: auto;
+    }
+    .btn-nav{
+        display: none;
+    }
+
+    .nav a:link.active, a:visited.active, a:active.active {
+      background: #D32222;
+      background: -webkit-linear-gradient(45deg, #D32222, #ff5858);
+      background: linear-gradient(45deg, #D32222, #ff5858);
+      color: #f0f0f0;
+    }
+    .nav-link-span {
+      transform: skew(20deg);
+      display: inline-block;
+    }
+    .nav-link {
+      transform: skew(-20deg);
+      color: #777;
+      text-decoration: none;
+    }
+    .nav-link:last-child {
+      padding-right: 3em;
+    }
+    a:hover.nav-link:not(.active) {
+      color: #fff;
+      background: #f0f0f0;
+      background: linear-gradient(-45deg, #D32222 30%, #099ab4);
+    }
+
+.row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+  }
+  @keyframes logo-hover {
+    20% {
+      padding-right: 0em;
+    }
+    100% {
+      padding-right: 5em;
+    }
+  }
+  
+  footer{
+    width: 100%;
+    background: #222;
+    color: #fff;
+    opacity: 0.85;
+    text-align: center;
+    position: static;
+    bottom: 0;
+    z-index: -1;
+  }
+  .footer_container{
+    margin: auto;
+    padding: 20px 0;
+    line-height: 1.8rem;
+  }
+
