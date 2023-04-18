@@ -5,14 +5,12 @@ Victoria Rodgers
 Capstone Project (part 1)
 Capstone Project (part 2)
 Capstone Project (part 3)
-
+Capstone Project (part 4)
 
 Bootstrap 5 is used along with HTML, CSS and Javascript. 
 
-I first started with the nav styling and setting up the nav links. I then styled the index picture gallery, with bootstrap code. I then used bootstrap cards to create the info card for the selected Pokémon. Afterwards I created the background for the Pokémon catch feature. 
+Taking the feedback and newly learned information from class I decided to update the original html and CSS code to better reflect the needs of the assignment. As well as to make it look more cohesive as a whole (mostly the nav). 
 
 Challenges faced: 
-It was interesting trying to think about how to put together the website to think about how it is going to work when creating the JavaScript. 
-While creating the image gallery, I realised as I was there was no need for the initial welcome page as it would be redundant. I decided to turn it into a pop-up modal that would explain to the user what the website would be used for. This idea for the feature came last minute so it will be added in the next iteration.  
-One particular challenge I faced was/is creating the responsiveness for the catching interface and create animations using shapes, especially when using canvas or svg shapes. I will be adding the animation for the throwing pokeball in the next iteration. 
 
+While coding the JavaScript portion of this assignment I ran into several issues the main one being how to parse and store the id of each individual Pokémon and use them in snippets of html code using html templates and functions. While I did manage to solve the issue of displaying the capture system of the Pokémon and to have the See More button load more Pokémon, I had a LOT of difficulty getting the information from the https://pokeapi.co/api/v2/pokemon/{id} to show on the popup modal. 
