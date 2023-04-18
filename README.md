@@ -7,7 +7,7 @@ Capstone Project (part 2)
 Capstone Project (part 3)
 Capstone Project (part 4)
 
-Bootstrap 5 is used along with HTML, CSS and Javascript. 
+Bootstrap 5 is used along with HTML, CSS and JavaScript. 
 
 Taking the feedback and newly learned information from class I decided to update the original html and CSS code to better reflect the needs of the assignment. As well as to make it look more cohesive as a whole (mostly the nav). 
 
